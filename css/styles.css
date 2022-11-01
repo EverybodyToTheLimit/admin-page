@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.admin-page {
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) minmax(250px, 4fr);
+    grid-template-rows: minmax(250px, 1fr);
+}
+
+.sidebar {
+    background-color: #0D324D;
+}
+
+.main-content {
+    background-color: #70A0AF;
+    display: grid; 
+    grid-template-rows: 1fr 1fr minmax(250px, 8fr);
+}
+
+.search-bar {
+
+}
+.nav {
+
+}
+.cards {
+    background-color: #F5F3F5;
+}
