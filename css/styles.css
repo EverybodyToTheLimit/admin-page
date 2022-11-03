@@ -1,3 +1,6 @@
+:root {
+    --shadowColor: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -73,10 +76,6 @@ img {
     display: grid; 
     grid-template-rows: 1fr 1fr minmax(250px, 8fr);
 }
-.cards {
-    background-color: #70A0AF;
-    box-shadow:         inset 0px 7px 3px -3px rgba(50, 50, 50, 0.75);
-}
 
 .search-bar {
     display: grid;
@@ -120,6 +119,10 @@ input {
     align-items: center;
     gap: 20px;
 }
+.nav {
+    padding-bottom: 10px;
+    box-shadow: 0 8px 6px -6px black;
+}
 
 .profile-pic-main {
     margin-left: 10px;
@@ -132,7 +135,7 @@ input {
 }
 
 .nav-buttons {
-    margin-right: 20px;
+    margin-right: 10%;
     gap: 10px;
 }
 
@@ -155,8 +158,8 @@ button {
     min-width: 0px;
     overflow: hidden;
     padding: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-bottom: 10px;
     text-align: center;
     touch-action: manipulation;
@@ -182,3 +185,107 @@ button {
     background: rgba(0, 0, 0, .08);
     color: rgba(0, 0, 0, .3);
   }
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: lightgray;
+    
+}
+
+.card {
+    background-color: #F5F3F5;
+    margin: 4%;
+    height: 200px;
+    border-radius: 10px;
+    max-width: 400px;
+    border-left: 15px solid #F7B538;
+    box-shadow: var(--shadowColor)
+
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    background-color: lightgray;
+  }
+
+.projects-header {
+    margin-top: 1%;
+    margin-left: 1.5%;
+}
+
+.project-container {
+    background-color: lightgray;
+}
+.announcements {
+    background-color: lightgray;
+  }
+
+.announcement-header {
+    background-color: lightgray;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.announcement-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-content: space-around;
+    background-color: #F5F3F5;
+    margin-top: 4%;
+    margin-left: 4%;
+    border-radius: 10px;
+    height: 80%;
+    width: 80%;
+    box-shadow: var(--shadowColor)
+
+}
+
+.announcement-card {
+    margin: 10%;
+    border-bottom: 2px solid lightgray;
+}
+
+.announcement-card:last-child {
+    border-bottom: 0px;
+}
+
+
+.trending {
+    background-color: lightgray;
+  }
+
+.trending-header {
+    background-color: lightgray;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.cards-right-side {
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.trending-cards {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(10px, 1fr));
+    align-content: space-around;
+    gap: 0;
+    background-color: #F5F3F5;
+    margin-top: 4%;
+    margin-left: 4%;
+    border-radius: 10px;
+    height: 80%;
+    width: 80%;
+    box-shadow: var(--shadowColor)
+}
+
+.trending-card {
+    margin: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
